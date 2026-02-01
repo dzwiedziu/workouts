@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{title}}</title>
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f6f3ee;
+        --card: #ffffff;
+        --ink: #231f1a;
+        --muted: #6a6259;
+        --accent: #3b5b4f;
+        --accent-soft: #dfe8e2;
+        --border: #e3ddd5;
+        --shadow: 0 12px 30px rgba(35, 31, 26, 0.08);
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Iowan Old Style", "Palatino", "Georgia", serif;
+        background: radial-gradient(circle at top left, #ffffff 0%, var(--bg) 45%, #efe9e1 100%);
+        color: var(--ink);
+      }
+
+      .page {
+        max-width: 980px;
+        margin: 40px auto 72px;
+        padding: 0 24px;
+      }
+
+      .page-header {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-bottom: 32px;
+      }
+
+      .page-header h1 {
+        font-size: 2.6rem;
+        margin: 0;
+        letter-spacing: 0.02em;
+      }
+
+      .meta {
+        font-family: "Trebuchet MS", "Helvetica", sans-serif;
+        color: var(--muted);
+        font-size: 0.95rem;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+      }
+
+      .week {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
+
+      .day {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 18px;
+        padding: 24px;
+        box-shadow: var(--shadow);
+      }
+
+      .day-header {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        margin-bottom: 16px;
+      }
+
+      .day-name {
+        font-size: 1.7rem;
+        margin: 0;
+        color: var(--accent);
+      }
+
+      .day-subtitle {
+        font-family: "Trebuchet MS", "Helvetica", sans-serif;
+        font-size: 1rem;
+        color: var(--muted);
+      }
+
+      .notes {
+        background: var(--accent-soft);
+        border-radius: 12px;
+        padding: 10px 14px;
+        font-family: "Trebuchet MS", "Helvetica", sans-serif;
+        font-size: 0.95rem;
+        margin-bottom: 16px;
+      }
+
+      .notes span {
+        font-weight: 700;
+        margin-right: 6px;
+      }
+
+      .phase {
+        border-left: 3px solid var(--accent);
+        padding-left: 16px;
+        margin-top: 16px;
+      }
+
+      .phase-title {
+        font-size: 1.2rem;
+        margin: 0 0 12px;
+      }
+
+      .phase-code {
+        font-family: "Trebuchet MS", "Helvetica", sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 0.06em;
+        font-size: 0.8rem;
+        color: var(--muted);
+        margin-right: 8px;
+      }
+
+      .block {
+        background: #faf8f4;
+        border-radius: 12px;
+        padding: 14px 16px;
+        margin-bottom: 12px;
+        border: 1px solid #efe8df;
+      }
+
+      .block-title {
+        font-size: 1rem;
+        margin: 0 0 10px;
+      }
+
+      .block p {
+        margin: 6px 0;
+      }
+
+      .block ol,
+      .block ul {
+        margin: 6px 0 0 18px;
+        padding: 0;
+      }
+
+      .block li {
+        margin: 6px 0;
+      }
+
+      .empty {
+        font-family: "Trebuchet MS", "Helvetica", sans-serif;
+        color: var(--muted);
+        font-style: italic;
+      }
+
+      @media (max-width: 720px) {
+        .page {
+          margin-top: 24px;
+        }
+
+        .page-header h1 {
+          font-size: 2.1rem;
+        }
+
+        .day {
+          padding: 18px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <header class="page-header">
+        <h1>{{title}}</h1>
+        <div class="meta">Generated {{generated_on}}</div>
+      </header>
+      <main class="week">
+        {{content}}
+      </main>
+    </div>
+  </body>
+</html>
