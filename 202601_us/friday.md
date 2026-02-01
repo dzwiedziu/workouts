@@ -1,17 +1,12 @@
 # Workout: Friday — S&C (AnTT): Anaerobic Threshold Training
 
-Notes: KB circuit between AirBike sets (x6); no rest during KB circuit.
 
-## M1 — Main Part: Anaerobic Threshold (Bike)
+## M1 — Main Part: Anaerobic Threshold (Bike) + KB Circuit
 
-### **M1.A**
-AirBike — 8×(2′ @ 150 W + 4′ @ 250 W) — cadence 68–72 RPM
-
-
-## M2 — Main Part: KB Circuit
-
-### **M2.A** KB Circuit (superset) — sets 6 — rest after-set 120s
-1) KB Squat Jumps — 8 reps — load 20 kg
-2) KB Press — 8 reps per side — load 20 kg
-3) KB Jerk — 8 reps per side — load 16 kg
-4) KB ABS legs crunch — 50 reps
+### **M1.A** AirBike Intervals + KB Circuit (superset) — sets 6 — rest after sets 120s
+1) AirBike — 2′ @ 150 W — cadence ~60 RPM
+2) AirBike — 4′ @ 210 W — cadence 68–72 RPM
+3) KB Squat Jumps — 8 reps — load 20 kg
+4) KB Press — 8 reps per side — load 20 kg
+5) KB Jerk — 8 reps per side — load 16 kg
+6) KB ABS legs crunch — 50 reps
