@@ -2,19 +2,17 @@
 
 Notes: <optional free text>
 
-## <PHASE> — <phase name>
+## <PHASE-ID> — <phase name>
 
-### <Block name> (single)
-**<ID>** <Exercise> — <sets>×<reps/time> — load <...> — rest <...> — tempo <...>
+### **<PHASE-ID>.<BLOCK-ID>** 
+<Exercise> — <sets>×<reps/time> — load <...> — rest <...> — tempo <...>
 Warm-up: <...>
 
-### <Block name> (superset) — sets <n> — rest between <..> / after-set <..>
-Exercises:
-- **<ID>a** <Exercise A> — <reps/time> — load <...> — tempo <...>
-- **<ID>b** <Exercise B> — <reps/time> — load <...> — tempo <...>
+### **<PHASE-ID>.<BLOCK-ID>** <Block name> (superset) — sets <n> — rest between <..> / after-set <..>
+1) <Exercise A> — <reps/time> — load <...> — tempo <...>
+2) <Exercise B> — <reps/time> — load <...> — tempo <...>
 
-### <Block name> (sequential) — rounds <n or 1> — transition between stations <..>
-Stations:
+### **<PHASE-ID>.<BLOCK-ID>** <Block name> (sequential) — rounds <n or 1> — transition between stations <..>
 1) <single or superset station>
 2) <single or superset station>
 ...
