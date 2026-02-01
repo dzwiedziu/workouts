@@ -45,7 +45,7 @@ DopamineO® Band complex exercise — 1×10
 
 ### **M1.B**
 Barbell Bench Press (or machine) — 3×8 — load 70 / 75 / 80 kg — rest 120s — tempo 3/0/2/1
-Warm-up: 3×10 @ 40 / 50 / 60 kg
+- Warm-up: 3×10 @ 40 / 50 / 60 kg
 
 ### **M1.C** Triceps cable extension + DB Butterfly (superset) — sets 3 — rest between max 30s / after-set 90s
 1) Triceps cable extension — 12 — load 50
@@ -54,7 +54,7 @@ Warm-up: 3×10 @ 40 / 50 / 60 kg
 ### **M1.D** Barbell triceps extension + DB lateral raise (superset) — sets 3 — rest between max 30s / after-set 90s
 1) Barbell triceps extension — 8 — load 35 / 37 / 40 kg
 2) DB lateral raise — 8 — load 8 kg
-Warm-up: 3×10 @ 20 / 25 / 30 kg + 6 / 6 / 6 kg
+- Warm-up: 3×10 @ 20 / 25 / 30 kg + 6 / 6 / 6 kg
 
 
 ## M2 — Main Part: Legs
@@ -65,7 +65,7 @@ Warm-up: 3×10 @ 20 / 25 / 30 kg + 6 / 6 / 6 kg
 
 ### **M2.B**
 Leg Press — 3×6 — load 80 / 90 / 100 kg — rest 120s
-Warm-up: 3×10 @ 50 / 60 / 70 kg
+- Warm-up: 3×10 @ 50 / 60 / 70 kg
 
 ### **M2.C**
 Quads double — 3×12 — load 45 / 50 / 55 kg — rest 90s

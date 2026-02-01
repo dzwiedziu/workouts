@@ -45,7 +45,7 @@ DopamineO® Band complex exercise — 1×10
 
 ### **M1.B**
 Barbell Rowing (Seal Row Bench) — 3×8 — load 70 / 75 / 80 kg — rest 120s — tempo 3/0/2/1
-Warm-up: 3×10 @ 40 / 50 / 60 kg
+- Warm-up: 3×10 @ 40 / 50 / 60 kg
 
 ### **M1.C** Lat Pulldown + DB Biceps Curl Isometric (superset) — sets 3 — rest between max 30s / after-set 90s
 1) Lat Pulldown (white band) — 12 — load 50 kg
@@ -53,7 +53,7 @@ Warm-up: 3×10 @ 40 / 50 / 60 kg
 
 ### **M1.D**
 Barbell Biceps Curl — 3×8 — load 35 / 37 / 40 kg — rest 90s
-Warm-up: 3×10 @ 20 / 25 / 30 kg
+- Warm-up: 3×10 @ 20 / 25 / 30 kg
 
 
 ## M2 — Main Part: Legs
@@ -64,7 +64,7 @@ Warm-up: 3×10 @ 20 / 25 / 30 kg
 
 ### **M2.B**
 Hex Bar Deadlift — 3×6 — load 80 / 90 / 100 kg — rest 120s
-Warm-up: 3×10 @ 50 / 60 / 70 kg
+- Warm-up: 3×10 @ 50 / 60 / 70 kg
 
 ### **M2.C**
 Lying Leg (hamstring) Curl (double: single) — 3×12 — load 45 / 50 / 55 kg — rest 90s

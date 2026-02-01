@@ -6,7 +6,7 @@ Notes: <optional free text>
 
 ### **<PHASE-ID>.<BLOCK-ID>** 
 <Exercise> — <sets>×<reps/time> — load <...> — rest <...> — tempo <...>
-Warm-up: <...>
+- Warm-up: <...>
 
 ### **<PHASE-ID>.<BLOCK-ID>** <Block name> (superset) — sets <n> — rest between <..> / after-set <..>
 1) <Exercise A> — <reps/time> — load <...> — tempo <...>
