@@ -35,3 +35,13 @@ Use it as the starting point for new workouts to keep formatting consistent.
 ## Notes
 
 If you’re using Codex, the `format_workout` skill can format raw workout notes into the template style.
+
+## Generate HTML Week Plans
+
+To export a week directory (e.g., `202601_us/`) into a nicely formatted HTML plan, use the `generate-html-week-plan` skill script:
+
+```bash
+python3 .codex/skills/generate-html-week-plan/scripts/generate_html_week_plan.py 202601_us
+```
+
+This writes `week_plan.html` into the target directory. Use `--out` to choose a different output path, or `--title` to override the page title.
