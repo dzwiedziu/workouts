@@ -287,6 +287,12 @@ def main() -> int:
         action="store_true",
         help="Only include weekday-named markdown files (monday.md ... sunday.md).",
     )
+    parser.add_argument(
+        "--exclude",
+        action="append",
+        default=[],
+        help="Exclude specific markdown files by name (repeatable; e.g. --exclude backup or --exclude backup.md).",
+    )
     args = parser.parse_args()
 
     directory = Path(args.directory).expanduser().resolve()
@@ -307,6 +313,18 @@ def main() -> int:
     if args.weekdays_only:
         markdown_files = [
             path for path in markdown_files if path.stem.lower() in WEEKDAYS
+        ]
+    excludes: set[str] = set()
+    for raw in args.exclude:
+        name = Path(str(raw).strip()).name
+        if name.lower().endswith(".md"):
+            name = name[: -len(".md")]
+        name = name.strip().lower()
+        if name:
+            excludes.add(name)
+    if excludes:
+        markdown_files = [
+            path for path in markdown_files if path.stem.strip().lower() not in excludes
         ]
     if not markdown_files:
         print(f"Error: no .md files found in {directory}.", file=sys.stderr)
