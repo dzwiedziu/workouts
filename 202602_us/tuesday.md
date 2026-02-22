@@ -14,7 +14,7 @@ Rowing (LT1 20%) — 1×8 min
 DopamineO® Band complex exercise — 1×10
 
 ### **P2.B** Lower Back (superset) — sets 1 — rest between 0s / after-set 45s
-1) GHD double leg MB (catch–throw) — 10/side — load 3 kg
+1) GHD double leg MB (catch–throw) — 10/side — load 8 kg
 2) Reverse hyper extension or Trunk extension — 10 — load 20 kg
 
 ### **P2.D** Hip mobility (superset) — sets 1 — rest between 0s / after-set 45s
@@ -45,11 +45,11 @@ Barbell Rowing (Seal Row Bench) — 2×8 — load 75 / 80 kg — rest 120s — t
 
 ### **M1.C** Lat Pulldown + DB Biceps Curl Isometric (superset) — sets 2 — rest between max 30s / after-set 75s
 1) Lat Pulldown (white band) — 12 — load 50 kg
-2) DB Biceps Curl Isometric — 12 — load 12 kg
+2) DB Biceps Curl Isometric — 12 — load 8 kg
 
 ### **M1.D**
-Barbell Biceps Curl — 2×8 — load 37 / 40 kg — rest 75s
-- Warm-up: 2×8 @ 20 / 30 kg
+Barbell Biceps Curl — 2×8 — load 22 / 25 kg — rest 75s
+- Warm-up: 2×8 @ 20 kg
 
 
 ## M2 — Main Part: Legs

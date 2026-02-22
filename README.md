@@ -45,3 +45,5 @@ python3 .codex/skills/generate-html-week-plan/scripts/generate_html_week_plan.py
 ```
 
 This writes `week_plan.html` into the target directory. Use `--out` to choose a different output path, or `--title` to override the page title.
+
+Tip: if your month folder also contains non-workout Markdown files (e.g., `diet.md`, `backup.md`), use `--weekdays-only` to include only `monday.md` ... `sunday.md`.

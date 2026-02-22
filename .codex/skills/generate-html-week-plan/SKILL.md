@@ -21,6 +21,7 @@ This writes `week_plan.html` inside the directory.
 - `--out <path>`: write to a specific HTML file.
 - `--title "..."`: override the document title.
 - `--include-missing`: include placeholders for missing weekdays.
+- `--weekdays-only`: only include weekday files (`monday.md` ... `sunday.md`).
 - `--template <path>`: use a custom HTML template (default is `assets/week_template.html`).
 
 ## Notes on Parsing

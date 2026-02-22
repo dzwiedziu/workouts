@@ -57,6 +57,7 @@ def parse_markdown(path: Path) -> dict:
     workout: dict = {"title": None, "notes": None, "phases": []}
     current_phase: dict | None = None
     current_block: dict | None = None
+    intro_lines: list[str] = []
 
     def flush_block() -> None:
         nonlocal current_block
@@ -86,6 +87,9 @@ def parse_markdown(path: Path) -> dict:
             continue
 
         if stripped.startswith("## "):
+            if intro_lines and workout["notes"] is None:
+                workout["notes"] = " ".join(intro_lines).strip() or None
+                intro_lines = []
             flush_block()
             flush_phase()
             phase_title = stripped[3:].strip()
@@ -94,6 +98,9 @@ def parse_markdown(path: Path) -> dict:
             continue
 
         if stripped.startswith("### "):
+            if intro_lines and workout["notes"] is None:
+                workout["notes"] = " ".join(intro_lines).strip() or None
+                intro_lines = []
             flush_block()
             if current_phase is None:
                 current_phase = {"title": "Session", "blocks": []}
@@ -102,10 +109,21 @@ def parse_markdown(path: Path) -> dict:
             index += 1
             continue
 
+        if stripped and current_phase is None and current_block is None and workout["notes"] is None:
+            intro_lines.append(stripped)
+            index += 1
+            continue
+
+        if current_phase is not None and stripped and current_block is None:
+            current_block = {"title": "", "items": []}
+
         if current_block is not None and stripped:
             current_block["items"].append(stripped)
 
         index += 1
+
+    if intro_lines and workout["notes"] is None:
+        workout["notes"] = " ".join(intro_lines).strip() or None
 
     flush_block()
     flush_phase()
@@ -158,7 +176,9 @@ def segment_items(items: list[str]) -> list[dict]:
 def render_block(block: dict) -> str:
     parts: list[str] = []
     parts.append('<div class="block">')
-    parts.append(f'<h4 class="block-title">{format_inline(block["title"])}</h4>')
+    title = str(block.get("title") or "").strip()
+    if title:
+        parts.append(f'<h4 class="block-title">{format_inline(title)}</h4>')
     segments = segment_items(block.get("items", []))
     if not segments:
         parts.append('<p class="empty">No exercises listed.</p>')
@@ -262,6 +282,11 @@ def main() -> int:
         action="store_true",
         help="Include placeholder days with no workout files",
     )
+    parser.add_argument(
+        "--weekdays-only",
+        action="store_true",
+        help="Only include weekday-named markdown files (monday.md ... sunday.md).",
+    )
     args = parser.parse_args()
 
     directory = Path(args.directory).expanduser().resolve()
@@ -279,6 +304,10 @@ def main() -> int:
         return 1
 
     markdown_files = list(directory.glob("*.md"))
+    if args.weekdays_only:
+        markdown_files = [
+            path for path in markdown_files if path.stem.lower() in WEEKDAYS
+        ]
     if not markdown_files:
         print(f"Error: no .md files found in {directory}.", file=sys.stderr)
         return 1
